@@ -18,7 +18,7 @@ import org.google.re2fj.wrapper.IntVector;
  */
 public class SimpleTest {
     public static void main(String[] args) throws IOException {
-        Initializer.InitRe2J();
+        Initializer.InitRe2FJ();
         
         Re2Options option = new Re2Options();
         option.set_max_mem(100*1024*1024);

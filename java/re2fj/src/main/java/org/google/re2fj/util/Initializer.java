@@ -22,7 +22,7 @@ public class Initializer {
     public final static String nativePath = "./lib/native";
     public final static String nativeResourcePath = "/lib/native/";
     
-    public static synchronized void InitRe2J() throws IOException {
+    public static synchronized void InitRe2FJ() throws IOException {
         if(initialized == false) {
             addNativeDir(nativePath);
             try {

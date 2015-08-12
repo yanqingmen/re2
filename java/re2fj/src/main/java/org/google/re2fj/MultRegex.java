@@ -34,7 +34,7 @@ public class MultRegex {
     //load native library
     static {
         try{
-            Initializer.InitRe2J();
+            Initializer.InitRe2FJ();
         }
         catch (IOException ex) {
             logger.error("load native library failed");
@@ -118,6 +118,8 @@ public class MultRegex {
         }
         return indexes;
     }
+    
+    
     
     /**
      * compile the regex machine, should be called before match
