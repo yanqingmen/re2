@@ -8,7 +8,7 @@
 # LDPCRE=-L/usr/local/lib -lpcre
 
 CXX?=g++
-CXXFLAGS?=-Wall -O3 -g -pthread # can override
+CXXFLAGS?=-Wall -O3 -g -pthread -fPIC # can override
 RE2_CXXFLAGS?=-Wsign-compare -c -I. $(CCPCRE)  # required
 LDFLAGS?=-pthread
 AR?=ar
