@@ -6,3 +6,6 @@ benchlog.*
 target/
 eval/
 java/*.o
+wrapper/*.java
+*.so
+*.cxx
