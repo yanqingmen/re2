@@ -89,7 +89,11 @@ public class MultRegex {
      */
     public int addPattern(String pattern) {
         int index = reSet.Add(pattern, errP.Pointer());
-        regexMap.put(index, pattern);
+        if(index<0) {
+            logger.error(errP.ToString());
+        } else {
+            regexMap.put(index, pattern);
+        }
         return index;
     }
     
@@ -123,6 +127,7 @@ public class MultRegex {
     
     /**
      * compile the regex machine, should be called before match
+     *   patterns can not be added after compile
      * @return 
      */
     public boolean compile() {

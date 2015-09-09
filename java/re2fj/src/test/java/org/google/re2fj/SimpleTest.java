@@ -30,10 +30,12 @@ public class SimpleTest {
         String pat0 = "1234.*?789";
         String pat1 = "476567954976";
         String pat2 = "12345.*?89";
+        String pat3 = "******????";
         
         System.out.println(reSet.Add(pat0, stringP.Pointer()));
         System.out.println(reSet.Add(pat1, stringP.Pointer()));
         System.out.println(reSet.Add(pat2, stringP.Pointer()));
+        System.out.println(reSet.Add(pat3, stringP.Pointer()));
         
         IntVector vec = new IntVector();
         
